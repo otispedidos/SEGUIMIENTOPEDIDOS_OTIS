@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seguimiento de Pedido - Tiendas Otis</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <img
+          src="https://www.jotform.com/uploads/otiscorp12/form_files/Logo.6876bf38aeced2.77967365.jpg"
+          alt="Tiendas Otis"
+        />
+      </div>
+      <h1>🔍 Seguimiento de Pedido</h1>
+
+      <form id="formularioSeguimiento">
+        <input
+          type="text"
+          id="codigoPedido"
+          placeholder="Ej. OTIS‑000001"
+          required
+        />
+        <button type="button" onclick="buscarPedido()">Consultar Pedido</button>
+      </form>
+
+      <p id="mensajeError"></p>
+
+      <!-- Resultado del pedido -->
+      <div id="resultado"></div>
+
+      <!-- Botón para reiniciar búsqueda -->
+      <div id="botonReiniciar" style="display: none; margin-top: 20px">
+        <button onclick="reiniciarFormulario()">
+          🔁 Consultar otro pedido
+        </button>
+      </div>
+    </div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+    <script src="avance.js"></script>
+  </body>
+</html>

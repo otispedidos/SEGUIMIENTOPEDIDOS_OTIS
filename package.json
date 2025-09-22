@@ -1,0 +1,11 @@
+{
+  "name": "seguimiento-pedidos-otis",
+  "version": "1.0.0",
+  "description": "Sistema de seguimiento de pedidos para Tiendas Oti's",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server"
+  },
+  "author": "TuNombre",
+  "license": "MIT"
+}
